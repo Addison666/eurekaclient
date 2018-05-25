@@ -16,3 +16,4 @@ eureka:
 # application parameters
 #app:
 #  service-url: http://MICRO-SERVICE/
+
