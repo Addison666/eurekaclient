@@ -12,7 +12,7 @@ import org.springframework.web.client.RestTemplate;
 public class CallService {
 
     private static String appServiceUrl = "http://MICRO-SERVICE/";
-    //private static String appService2Url = "http://MICRO-SERVICE2/";
+    private static String appService2Url = "http://MICRO-SERVICE2/";
     @Autowired
     RestTemplate restTemplate;
 
@@ -22,6 +22,6 @@ public class CallService {
     }
 
     public String callService2(){
-       return restTemplate.getForObject(appServiceUrl+"api/resource",String.class);
+       return restTemplate.getForObject(appService2Url+"api/resource",String.class);
     }
 }
